@@ -22,7 +22,7 @@
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       dream-encode-test
  * Domain Path:       /languages
- * GitHub Plugin URI: GH_REPO_URL
+ * GitHub Plugin URI: dream-encode/dream-encode-test2
  * Primary Branch:    main
  * Release Asset:     true
  */
