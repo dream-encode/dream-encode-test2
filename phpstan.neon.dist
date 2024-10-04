@@ -1,0 +1,27 @@
+parameters:
+    level: 8
+    treatPhpDocTypesAsCertain: false
+    checkMissingIterableValueType: false
+    checkUninitializedProperties: false
+    tmpDir: tests
+    paths:
+        - dream-encode-test.php
+        - includes
+        - admin
+        - public
+    scanFiles:
+        - includes/dream-encode-test-constants.php
+    scanDirectories:
+        - includes
+    excludePaths:
+        - node_modules/*
+    bootstrapFiles:
+        - includes/dream-encode-test-constants.php
+        - %rootDir%/../../php-stubs/wordpress-stubs/wordpress-stubs.php
+        - %rootDir%/../../php-stubs/woocommerce-stubs/woocommerce-stubs.php
+        - %rootDir%/../../php-stubs/woocommerce-stubs/woocommerce-packages-stubs.php
+    ignoreErrors:
+        -
+            message: '#Variable \$[a-zA-Z0-9\\_]+ might not be defined#'
+            paths:
+                - admin/partials/*
